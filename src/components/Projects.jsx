@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
 
 const Projects = () => {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openLightbox = (imageSrc) => {
+    setSelectedImage(imageSrc);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setSelectedImage(null);
+    setLightboxOpen(false);
+  };
+
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h2
@@ -27,7 +40,8 @@ const Projects = () => {
                 width={150}
                 height={150}
                 alt={project.title}
-                className="mb-6 rounded"
+                className="mb-6 rounded hover:cursor-zoom-in"
+                onClick={() => openLightbox(project.image)}
               />
             </motion.div>
             <motion.div
@@ -50,6 +64,25 @@ const Projects = () => {
           </div>
         ))}
       </div>
+      {lightboxOpen && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50"
+          onClick={closeLightbox}
+        >
+          <motion.img
+            src={selectedImage}
+            alt="Project Lightbox"
+            className="max-w-full max-h-full px-2"
+            initial={{ y: -50 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.3 }}
+            onClick={(e) => e.stopPropagation()} // Prevent closing on image click
+          />
+        </motion.div>
+      )}
     </div>
   );
 };

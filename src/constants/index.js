@@ -1,6 +1,6 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
+import project1 from "../assets/projects/project-1.png";
+import project2 from "../assets/projects/project-2.png";
+import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.jpg";
 
 export const HERO_CONTENT = `Highly skilled Front End Developer with a proven track record of 3 years in the industry, currently excelling as a CMS Developer at Jumppace. I specialize in designing and developing user-centric web applications, harnessing the power of modern technologies such as WordPress, Shopify, HTML, CSS, JavaScript, React, Node.js, and MongoDB. With a completed degree in Software Engineering, I am dedicated to continuously enhancing my expertise and staying at the forefront of industry trends. I am deeply passionate about creating innovative solutions and thrive on challenges to deliver exceptional results. Let's connect and explore opportunities to collaborate on impactful projects.`;
@@ -33,18 +33,18 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "ENGINEREBUILD - Auto Parts Site",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Built on WordPress, this auto parts website provides a streamlined shopping experience for automotive enthusiasts. It features a wide range of high-quality parts, intuitive navigation, and detailed product information, ensuring an optimized user journey for customers.",
+      technologies: ["WordPress", "WP Bakery", "HTML", "CSS", "PHP", "MySQL"],
   },
   {
-    title: "Task Management App",
+    title: "RankBae - SEO & Digital Marketing Site",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "Designed for SEO and digital marketing agencies on WordPress, this website focuses on maximizing online visibility and business growth. Specializing in SEO optimization, PPC management, and engaging content creation, it aims to deliver measurable results and enhance client ROI.",
+    technologies: ["WordPress", "Elementor", "HTML", "CSS", "PHP", "MySQL"],
   },
   {
     title: "Portfolio Website",

@@ -40,7 +40,7 @@ const Projects = () => {
                 width={150}
                 height={150}
                 alt={project.title}
-                className="mb-6 rounded hover:cursor-zoom-in"
+                className="mb-6 rounded hover:cursor-zoom-in img-css"
                 onClick={() => openLightbox(project.image)}
               />
             </motion.div>
@@ -72,15 +72,40 @@ const Projects = () => {
           className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50"
           onClick={closeLightbox}
         >
-          <motion.img
-            src={selectedImage}
-            alt="Project Lightbox"
-            className="max-w-full max-h-full px-2"
-            initial={{ y: -50 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 0.3 }}
-            onClick={(e) => e.stopPropagation()} // Prevent closing on image click
-          />
+          <motion.div
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            className="relative"
+            onClick={(e) => e.stopPropagation()} // Prevent closing on container click
+          >
+            <button
+              className="absolute top-0 right-0 bg-gray-800 text-white rounded-full p-1 z-10"
+              onClick={closeLightbox}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+            <motion.img
+              src={selectedImage}
+              alt="Project Lightbox"
+              className="max-w-full max-h-screen px-2"
+              initial={{ y: -50 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 0.3 }}
+            />
+          </motion.div>
         </motion.div>
       )}
     </div>

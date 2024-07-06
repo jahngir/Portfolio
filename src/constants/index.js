@@ -1,7 +1,7 @@
-import project1 from "../assets/projects/project-1.png";
-import project2 from "../assets/projects/project-2.png";
-import project3 from "../assets/projects/project-3.png";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/project-1.webp";
+import project2 from "../assets/projects/project-2.webp";
+import project3 from "../assets/projects/project-3.webp";
+import project4 from "../assets/projects/project-4.webp";
 
 export const HERO_CONTENT = `Highly skilled Front End Developer with a proven track record of 3 years in the industry, currently excelling as a CMS Developer at Jumppace. I specialize in designing and developing user-centric web applications, harnessing the power of modern technologies such as WordPress, Shopify, HTML, CSS, JavaScript, React, Node.js, and MongoDB. With a completed degree in Software Engineering, I am dedicated to continuously enhancing my expertise and staying at the forefront of industry trends. I am deeply passionate about creating innovative solutions and thrive on challenges to deliver exceptional results. Let's connect and explore opportunities to collaborate on impactful projects.`;
 
@@ -33,32 +33,32 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "ENGINEREBUILD - Auto Parts Site",
+    title: "Engineer Build - Auto Parts Site",
     image: project1,
     description:
       "Built on WordPress, this auto parts website provides a streamlined shopping experience for automotive enthusiasts. It features a wide range of high-quality parts, intuitive navigation, and detailed product information, ensuring an optimized user journey for customers.",
-      technologies: ["WordPress", "WP Bakery", "HTML", "CSS", "PHP", "MySQL"],
+      technologies: ["WordPress", "WP Bakery", "HTML/CSS","PHP", "MySQL"],
   },
   {
     title: "RankBae - SEO & Digital Marketing Site",
     image: project2,
     description:
       "Designed for SEO and digital marketing agencies on WordPress, this website focuses on maximizing online visibility and business growth. Specializing in SEO optimization, PPC management, and engaging content creation, it aims to deliver measurable results and enhance client ROI.",
-    technologies: ["WordPress", "Elementor", "HTML", "CSS", "PHP", "MySQL"],
+    technologies: ["WordPress", "Elementor", "HTML/CSS", "PHP", "MySQL"],
   },
   {
-    title: "Portfolio Website",
+    title: "Urban Cut - Clothing Brand Site",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Developed on Shopify, this ecommerce site showcases a clothing brand with a focus on delivering a seamless shopping experience. Featuring a curated collection, intuitive navigation, and secure transactions, it prioritizes customer satisfaction and brand growth through an engaging online retail platform.",
+      technologies: ["Shopify", "HTML/CSS", "Liquid", "JavaScript", "Bootstrap"],
   },
   {
-    title: "Blogging Platform",
+    title: "Leatherly - Clothing Brand Site",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Powered by WordPress, this ecommerce site showcases a fashion brand with a commitment to delivering a stylish and intuitive shopping experience. Featuring a curated collection, sleek design, and seamless navigation, it enhances customer satisfaction and supports brand growth through an engaging online retail platform.",
+    technologies: ["WordPress","HTML/CSS", "WooCommerce", "PHP", "MySQL"],
   },
 ];
 

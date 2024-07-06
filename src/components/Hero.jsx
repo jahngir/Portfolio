@@ -21,7 +21,7 @@ const Hero = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-6xl tracking-tight font-thin lg:mt-16 lg:text-7xl text-center lg:text-left "
+              className="pb-10 text-4xl tracking-tight font-thin lg:mt-16 lg:text-6xl text-center lg:text-left "
             >
               Jahangir Naseer
             </motion.h1>
@@ -29,7 +29,7 @@ const Hero = () => {
               variants={container(0.5)}
               initial="hidden"
               animate="visible"
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-center lg:text-left text-3xl tracking-tight text-transparent"
+              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-center lg:text-left text-2xl lg:text-3xl tracking-tight text-transparent"
             >
               Full Stack Developer
             </motion.span>

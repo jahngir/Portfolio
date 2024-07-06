@@ -11,9 +11,24 @@ const Navbar = () => {
           <span className="text-4xl tracking-tight">JN</span>
         </div>
         <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-          <FaLinkedin />
-          <FaGithub />
-          <FaInstagram />
+          <a
+            className="hover:scale-110 transform transition-transform"
+            href="https://www.linkedin.com/in/jahangir-naseer-8a6330248/"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            className="hover:scale-110 transform transition-transform"
+            href="https://github.com/jahngir/"
+          >
+            <FaGithub />
+          </a>
+          <a
+            className="hover:scale-110 transform transition-transform"
+            href="https://www.instagram.com/jahangir.naseer/"
+          >
+            <FaInstagram />
+          </a>
         </div>
       </nav>
     </>

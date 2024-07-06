@@ -39,7 +39,7 @@ const Contact = () => {
           className="my-4"
         >
           Email: &nbsp;
-          <a href="mailto:jahangirsoomro30@gmail.com" className="my-4">
+          <a href="mailto:jahangirsoomro30@gmail.com" className="my-4 ">
             {CONTACT.email}
           </a>
         </motion.p>

@@ -12,7 +12,7 @@ export const EXPERIENCES = [
     year: "July 2023 - Present",
     role: "Software Engineer II",
     company: "Jumppace Pvt Ltd, Karachi",
-    description: `Specialized in creating visually stunning and functional websites. Expertise in WordPress, Elementor, plugin and theme customization, Shopify development, and responsive web design.`,
+    description: `Specialized in creating visually stunning and functional websites. Expertise in WordPress, Elementor, plugin and theme customization, Shopify development, and responsive web design. Proficient in developing websites on other CMS platforms such as Squarespace, Webflow, Weebly, and Wix, ensuring versatile solutions tailored to diverse client needs.`,
     technologies: ["WordPress", "Elementor", "Shopify", "React", "JavaScript", "PHP", "Node.js"],
   },
   {

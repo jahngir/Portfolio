@@ -46,7 +46,7 @@ const Projects = () => {
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: 100 }}
+              initial={{ opacity: 0, x: 0 }}
               transition={{ duration: 1 }}
               className="w-full max-w-xl lg:2-3/4"
             >
